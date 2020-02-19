@@ -1,6 +1,5 @@
 const merge = require("webpack-merge");
 const webpack = require("webpack");
-const path = require("path");
 const pkg = require('./package.json');
 
 const args = process.argv.slice(2);
