@@ -2,6 +2,7 @@
 [![Support](https://img.shields.io/badge/Support-Community%20(no%20active%20support)-orange.svg)](https://docs.mendix.com/developerportal/app-store/app-store-content-support)
 [![GitHub release](https://img.shields.io/github/release/JelteMX/mendix-time-input)](https://github.com/JelteMX/mendix-time-input/releases/latest)
 [![GitHub issues](https://img.shields.io/github/issues/JelteMX/mendix-time-input)](https://github.com/JelteMX/mendix-time-input/issues)
+[![DeepScan grade](https://deepscan.io/api/teams/7221/projects/9643/branches/127915/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=7221&pid=9643&bid=127915)
 
 ## Time Input widget for Mendix
 
