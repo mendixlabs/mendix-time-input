@@ -5,7 +5,7 @@
 
 ## Time Input widget for Mendix
 
-![AppStore](/assets/AppSToreIcon.png)
+![AppStore](/assets/AppStoreIcon.png)
 
 Choose your time using a dropdown. This widget is a pluggable widget, offline compatible, only intended for Web (not Native Mobile). As this is a pluggable widget, it is also compatible with Mendix Studio (Web).
 
