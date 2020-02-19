@@ -1,3 +1,4 @@
+[![Apache License](https://img.shields.io/badge/license-Apache%202.0-orange.svg?style=flat-square)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Studio](https://img.shields.io/badge/Studio%20version-8.5%2B-blue.svg)](https://appstore.home.mendix.com/link/modeler/)
 [![Support](https://img.shields.io/badge/Support-Community%20(no%20active%20support)-orange.svg)](https://docs.mendix.com/developerportal/app-store/app-store-content-support)
 ![WM](https://img.shields.io/badge/Webmodeler%20compatible-YES-green.svg)
