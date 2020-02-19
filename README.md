@@ -1,5 +1,6 @@
 [![Studio](https://img.shields.io/badge/Studio%20version-8.5%2B-blue.svg)](https://appstore.home.mendix.com/link/modeler/)
 [![Support](https://img.shields.io/badge/Support-Community%20(no%20active%20support)-orange.svg)](https://docs.mendix.com/developerportal/app-store/app-store-content-support)
+![WM](https://img.shields.io/badge/Webmodeler%20compatible-YES-green.svg)
 [![GitHub release](https://img.shields.io/github/release/JelteMX/mendix-time-input)](https://github.com/JelteMX/mendix-time-input/releases/latest)
 [![GitHub issues](https://img.shields.io/github/issues/JelteMX/mendix-time-input)](https://github.com/JelteMX/mendix-time-input/issues)
 [![DeepScan grade](https://deepscan.io/api/teams/7221/projects/9643/branches/127915/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=7221&pid=9643&bid=127915)
