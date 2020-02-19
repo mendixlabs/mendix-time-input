@@ -1,0 +1,54 @@
+{
+  "name": "timeinput",
+  "widgetName": "TimeInput",
+  "version": "1.0.0",
+  "description": "Input field/dropdown for time",
+  "copyright": "Jelte Lagendijk 2020",
+  "author": "Jelte Lagendijk",
+  "config": {
+    "widgetPath": "./dist/MxTestProject/widgets",
+    "projectPath": "./dist/MxTestProject/",
+    "mendixHost": "http://windows:8080",
+    "developmentPort": "3000"
+  },
+  "packagePath": "mendix",
+  "scripts": {
+    "start": "concurrently \"pluggable-widgets-tools start:server --open\" \"npm:dev\"",
+    "dev": "pluggable-widgets-tools start:ts",
+    "build": "pluggable-widgets-tools build:ts",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "pretest": "npm run lint && npm run build",
+    "test": "pluggable-widgets-tools test:unit --no-cache --ci && npm run test:e2e",
+    "test:unit": "pluggable-widgets-tools test:unit --coverage",
+    "test:e2e": "export URL=https://badge.mxapps.io || set URL=https://badge.mxapps.io && pluggable-widgets-tools test:e2e:ts",
+    "test:e2e:dev": "export DEBUG=true || set DEBUG=true && pluggable-widgets-tools test:e2e:ts",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:ts",
+    "analyze": "pluggable-widgets-tools release:ts --analyze"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^8.6.0",
+    "@types/big.js": "^4.0.5",
+    "@types/classnames": "^2.2.4",
+    "@types/enzyme": "^3.1.10",
+    "@types/enzyme-adapter-react-16": "^1.0.2",
+    "@types/jasmine": "^3.4.0",
+    "@types/jest": "^24.0.0",
+    "@types/react": "^16.8.17",
+    "@types/react-bootstrap": "^0.32.20",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-test-renderer": "^16.8.1",
+    "@types/webdriverio": "^4.13.0",
+    "terser-webpack-plugin": "^2.3.5",
+    "webpack-bundle-analyzer": "^3.6.0"
+  },
+  "dependencies": {
+    "big.js": "^5.2.2",
+    "classnames": "^2.2.6",
+    "multi-integer-range": "^4.0.8",
+    "rc-time-picker": "^3.7.3",
+    "react-bootstrap": "^0.33.1"
+  }
+}
