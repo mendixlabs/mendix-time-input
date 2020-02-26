@@ -8,7 +8,22 @@ export interface TimeSelectorProps extends TimePickerProps {
     containerClassName?: string;
 }
 
-export class TimeSelector extends Component<TimeSelectorProps> {
+interface TimeSelectorState {
+    focus: boolean;
+}
+
+export class TimeSelector extends Component<TimeSelectorProps, TimeSelectorState> {
+    onOpen = this.openHandler.bind(this);
+    onClose = this.closeHandler.bind(this);
+
+    constructor(props: TimeSelectorProps) {
+        super(props);
+
+        this.state = {
+            focus: false
+        };
+    }
+
     render(): ReactNode {
         return (
             <FormGroup
@@ -23,12 +38,13 @@ export class TimeSelector extends Component<TimeSelectorProps> {
                     )}
                 >
                     <TimePicker
+                        className={this.state.focus ? "focus" : ""}
                         value={this.props.value}
                         placement="bottomLeft"
                         prefixCls="time-input-widget"
                         onChange={this.props.onChange}
-                        onOpen={this.props.onOpen}
-                        onClose={this.props.onClose}
+                        onOpen={this.onOpen}
+                        onClose={this.onClose}
                         allowEmpty={false}
                         use12Hours={this.props.use12Hours}
                         showHour={this.props.showHour}
@@ -53,5 +69,19 @@ export class TimeSelector extends Component<TimeSelectorProps> {
     renderLabel(): ReactNode {
         const { label } = this.props;
         return label === null ? null : <label className={classnames("control-label", "col-sm-3")}>{label}</label>;
+    }
+
+    openHandler(): void {
+        this.setState({ focus: true });
+        if (this.props.onOpen) {
+            this.props.onOpen({ open: true });
+        }
+    }
+
+    closeHandler(): void {
+        this.setState({ focus: false });
+        if (this.props.onClose) {
+            this.props.onClose({ open: false });
+        }
     }
 }

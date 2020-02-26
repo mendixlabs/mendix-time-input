@@ -1,7 +1,7 @@
 {
   "name": "timeinput",
   "widgetName": "TimeInput",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Input field/dropdown for time",
   "copyright": "Jelte Lagendijk 2020",
   "author": "Jelte Lagendijk",
