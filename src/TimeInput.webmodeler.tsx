@@ -16,9 +16,9 @@ export class preview extends Component<TimeInputPreviewProps> {
                 showHour={this.props.showHourEnable}
                 showMinute={this.props.showMinuteEnable}
                 showSecond={this.props.showSecondsEnable}
-                hourStep={this.props.stepSizeHour}
-                minuteStep={this.props.stepSizeMinute}
-                secondStep={this.props.stepSizeSecond}
+                hourStep={this.props.stepSizeHour !== null ? this.props.stepSizeHour : undefined}
+                minuteStep={this.props.stepSizeMinute !== null ? this.props.stepSizeMinute : undefined}
+                secondStep={this.props.stepSizeSecond !== null ? this.props.stepSizeSecond : undefined}
                 placeholder={placeHolder}
             />
         );
